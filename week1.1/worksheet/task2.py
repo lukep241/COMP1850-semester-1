@@ -10,7 +10,7 @@ print(f"Welcome to LeedsBank's savings calculator {name}!")
 # Ask the user to input an amount they want to save every month - this should be an integer.
 # Validate that they have entered an integer.
 try:
-    saving = int(input("Enter the amount you want to save every month: "))
+    saving = int(input("Enter the amount you want to save every month, please enter an integer: "))
 except:
     print("Invalid amount")
 
