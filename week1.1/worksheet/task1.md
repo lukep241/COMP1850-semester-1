@@ -11,12 +11,12 @@ You can complete this task on the worksheet pdf if you prefer.
 |     Command                 |     Explanation    |
 |-----------------------------|--------------------|
 |     pwd                     | shows the current location of the terminal |
-|     ls                      | |
-|     cd directory_name       | |
-|     cd ..                   | |
-|     cd -                    | |
-|     mkdir directory_name    | |
-|     touch filename          | |
+|     ls                      | shows a list of the files that are contained within the current folder |
+|     cd directory_name       | goes to (opens) the folder/directory that is specified by 'directory_name' |
+|     cd ..                   | goes back to the parent directory of the current folder |
+|     cd -                    | goes back to the parent directory of the current folder and also outputs its path|
+|     mkdir directory_name    | creates a new empty directory/folder with a name specified by 'directory_name'|
+|     touch filename          | creates a new empty FILE with the name specified by 'filename'|
 |     git status              | |
 |     git add -A              | |
 |     git commit -m ""        | |
