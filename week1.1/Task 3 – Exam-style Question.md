@@ -18,7 +18,7 @@ State two advantages of using version control when writing software. Explain eac
 
 
 
-**Another advantage is that** 
+**Another advantage is that when working in a team, you can make you own changes to a repository on a local code space and then commit your changes back to the shared repository without affecting anyone elses work/changes. This is because each commit is essentially the same project but in a different state that is still visible to other team members. They can view and work off of these changes once they are done** 
 
 **--------------------**		
 
