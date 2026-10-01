@@ -17,9 +17,9 @@ You can complete this task on the worksheet pdf if you prefer.
 |     cd -                    | goes back to the parent directory of the current folder and also outputs its path|
 |     mkdir directory_name    | creates a new empty directory/folder with a name specified by 'directory_name'|
 |     touch filename          | creates a new empty FILE with the name specified by 'filename'|
-|     git status              | |
-|     git add -A              | |
-|     git commit -m ""        | |
-|     git push                | |
-|     git pull                | |
+|     git status              | displays information about the working directory and the staging area (which changes are staged/unstaged)|
+|     git add -A              | stages all changes made in the working directory so that they will be included in the next commit|
+|     git commit -m ""        | commits the changes made (that are staged) with a message attached to it|
+|     git push                | updates the remote repository with the changes made in the local repository after the last commit|
+|     git pull                | fetches the latest changes in the remote repository and merges it with the changes in the current local repository|
 
