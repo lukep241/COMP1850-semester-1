@@ -14,4 +14,10 @@ print("Mean =", sum(numbers) / len(numbers))
 
 
 numbers.sort()
-print("Median =", numbers[len(numbers) // 2])
+
+if (len(numbers) % 2 != 0): #if length of list is odd
+    print("Median =", numbers[len(numbers) // 2])
+else:
+    mid = len(numbers) // 2
+    median = (numbers[mid] + numbers[mid + 1]) / 2
+    print("Median =", median)
