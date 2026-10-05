@@ -1,7 +1,6 @@
 # Worksheet 1.2: Task 2 Solution
 from util import read_numbers
 import sys
-import statistics
 
 numbers = read_numbers()
 
@@ -11,7 +10,7 @@ if (len(numbers) == 0):
 
 print("Minimum =", min(numbers))
 print("Maximum =", max(numbers))
-print("Mean =", statistics.mean(numbers))
+print("Mean =", sum(numbers) / len(numbers))
 
 
 numbers.sort()
