@@ -18,6 +18,6 @@ numbers.sort()
 if (len(numbers) % 2 != 0): #if length of list is odd
     print("Median =", numbers[len(numbers) // 2])
 else:
-    mid = len(numbers) // 2
-    median = (numbers[mid] + numbers[mid + 1]) / 2
+    mid = len(numbers) // 2 #finds the second middle index
+    median = (numbers[mid] + numbers[mid - 1]) / 2
     print("Median =", median)
