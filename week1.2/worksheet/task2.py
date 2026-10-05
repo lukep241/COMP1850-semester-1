@@ -10,7 +10,7 @@ if (len(numbers) == 0):
 
 
 print("Minimum =", min(numbers))
-print("Maximum = ", max(numbers))
+print("Maximum =", max(numbers))
 print("Mean =", statistics.mean(numbers))
 
 
