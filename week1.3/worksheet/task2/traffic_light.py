@@ -19,18 +19,15 @@ colors = list(states.keys())
 durations = list(states.values())
 
 current = 0
-while (systime < maxtime):
+while (systime <= maxtime):
     state = colors[current]
     dur = durations[current]
 
     elapsed = 0
-    while (elapsed < dur):
+    while (elapsed < dur and systime <= maxtime):
         print(f"Time {systime:03} State {state}")
         systime += 1
         elapsed += 1
-
-        if (systime > maxtime):
-            break
     else:
         current += 1
 
@@ -39,7 +36,5 @@ while (systime < maxtime):
 
 
 
-    
-   
 
 # At the end of each step you should output the time and state using the statement on line 14
