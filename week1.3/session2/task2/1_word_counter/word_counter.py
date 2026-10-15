@@ -15,3 +15,27 @@
 # story.txt - 290
 # story2.txt - 326
 # glasses.txt - 210
+
+newFile = True
+
+while (newFile):
+    print("WORD COUNTER")
+
+    name = input("Enter file name (with extension): ")
+
+    while (name != "glasses.txt" and name != "story.txt" and name != "story2.txt"):
+        name = input("Invalid file name, try again: ")
+
+
+    with open(name, "r") as file:
+        content = file.read()
+
+        words = content.split(" ")
+
+        print("WORDS:", len(words))
+
+
+    if (input("Press [N] for a new file word count: ").lower() == "n"):  
+        newFile = True
+    else:
+        newFile = False
