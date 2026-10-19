@@ -32,7 +32,7 @@ def currency_converter(amount, from_currency, to_currency):
             else:
                 print("Invalid currency")   
         else:
-            ("Amount should be non-negative")
+            print("Amount should be non-negative")
             return 0.0
     except:
         print("Error - amount is not a numerical data type")
