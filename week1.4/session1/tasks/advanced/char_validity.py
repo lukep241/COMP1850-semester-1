@@ -18,6 +18,30 @@ def valid_char_in_string(popList, charSet):
     a Boolean True. Examples of valid charSet are ['0', '1'], ['-', '*'].
     """
 
+    #check each item in list charSet is a single character
+    for i in charSet:
+        if (len(i) > 1):
+            print("Invalid charSet.")
+            return False
+
+    try:
+        chars = charSet
+        chars.split()
+        if (len(chars) > 1):
+            print("Invalid charSet.")
+            return False
+    except:
+        for string in popList:
+                for char in string:
+                    if (not char in charSet):
+                        print(f"Character {char} not found in charSet.")
+                        return False
+
+    return True  
+            
+    
+    
+
 # test data
 
 plist1 = ['00000', '00001', '00010', '00011', '00100']

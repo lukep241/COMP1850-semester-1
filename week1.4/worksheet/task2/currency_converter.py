@@ -20,6 +20,22 @@ def currency_converter(amount, from_currency, to_currency):
 
     # your code here
 
+    try:
+        amount = float(amount)
+        if (amount >= 0):
+            currencies = list(conversion_rate.keys())
+            if (from_currency in currencies and to_currency in currencies):
+                conversions = conversion_rate.get(from_currency)
+                rate = conversions.get(to_currency)
+
+                return round(amount * rate, 2)
+            else:
+                print("Invalid currency")   
+        else:
+            ("Amount should be non-negative")
+    except:
+        print("Error - amount is not a numerical data type")
+
     return None
 
 # Submit only this file currency_converter.py with the completed function.
