@@ -32,7 +32,6 @@ def currency_converter(amount, from_currency, to_currency):
             else:
                 print("Invalid currency")   
         else:
-            ("Amount should be non-negative")
             return 0.0
     except:
         print("Error - amount is not a numerical data type")
@@ -42,3 +41,5 @@ def currency_converter(amount, from_currency, to_currency):
 # Submit only this file currency_converter.py with the completed function.
 
 # Remove any additional code you may have added during development and testing.
+
+print(currency_converter(-1, "INR", "PHP"))

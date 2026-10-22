@@ -17,6 +17,30 @@ def most_frequent_string(votes):
         - None, None: if votes is empty.
     """
 
+    highest = -1
+    word = ""
+
+    tie = []
+
+    for i in votes:
+        current = votes.count(i)
+
+        if current >= highest:
+            if current > highest:
+                tie.clear()
+
+            highest = current
+            word = i
+            if (not word in tie):
+                tie.append(word)
+
+    if len(tie) == 1:
+        return word, highest
+    else:
+        return tie, highest
+    
+
+
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
     # Hint 2: Think about the properties of the various collection-types
