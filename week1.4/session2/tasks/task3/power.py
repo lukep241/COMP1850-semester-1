@@ -7,7 +7,7 @@
 def power(x, n):
     # complete your code here
     # base case
-    
+    print()
 
     # recursive case
 
