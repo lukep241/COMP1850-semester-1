@@ -10,7 +10,10 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def __init__(self, name, birth):
-
+        """
+        Create a new person with a given name and date of birth
+        """
+        
         if not isinstance(name, str):
             raise TypeError("Name is not a string.")
 
