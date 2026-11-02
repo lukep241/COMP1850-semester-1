@@ -11,7 +11,7 @@ class Person:
     # birth fields (see README.md for further details)
     def __init__(self, name, birth):
         """
-        Create a new person with a given name and date of birth
+        Creates a new person with a given name and date of birth
         """
         
         if not isinstance(name, str):
