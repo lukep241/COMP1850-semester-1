@@ -16,6 +16,7 @@ def test_hot():
     assert comfort_level(1000) == "HOT"
 
 def test_ok():
+    #test that the 'OK' comfort level is returning the correct value 
     assert comfort_level(16) == "OK"
     assert comfort_level(24) == "OK"
     

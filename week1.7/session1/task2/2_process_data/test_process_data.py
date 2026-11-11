@@ -26,5 +26,5 @@ def test_multiple_int_list():
     # complete the implementation for
     # testing a list with multiple integers
     assert process_data([1,2,3]) == 6
-    assert process_data([1,2,-3,4,5]) == 9
+    assert process_data([1,2,-3,4,5]) == 9 #includes negative value
     
