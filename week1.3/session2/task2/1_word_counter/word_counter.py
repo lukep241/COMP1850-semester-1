@@ -19,6 +19,10 @@
 newFile = True
 
 while (newFile):
+    """
+    Reads text file and prints its word count until user stops 
+    """
+
     print("WORD COUNTER")
 
     name = input("Enter file name (with extension): ")
