@@ -3,7 +3,8 @@ import httpx
 import pandas as pd
 import matplotlib.pyplot as plt
 
-api_key="U6KXJTZC2E8VGH39PD7UMG4BZ"   # your API key
+given_api_key="U6KXJTZC2E8VGH39PD7UMG4BZ"  
+api_key = "KD6UF8LBH7C7BFQ4S2B8FWRMU" # your API key
 
 city="Leeds"     # city location
 country="UK"     # country location
@@ -41,11 +42,17 @@ df = pd.DataFrame(temp_data)
 
 df.plot()
 
-plt.show()
+
 
 # annotate the graph with axis labels
+
+
+
 
 # note that temperature is in Farenheit (F)
 # convert to Celcius before plotting 
 
 # using the documentation explore other data, eg. rainfall  
+
+
+plt.show()
